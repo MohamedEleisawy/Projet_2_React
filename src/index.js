@@ -1,17 +1,60 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import {
+  createBrowserRouter, // Crée un routeur basé sur l'historique du navigateur.
+  RouterProvider, // Fournit le routeur à l'application.
+} from "react-router-dom";
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Home from './pages/home'; 
+import Article from './pages/article';
+import Gallery from './pages/gallery';
+import Features from './pages/features';
+import Testimonials from './pages/testimonials';
+import ErrorPages from './pages/errorpages';  
+import DiscountForm from './pages/DiscountForm';
+import  { action as eventAction } from "./components/Form" // importation de la fonction eventAction depuis le composant Form pour gérer l'action de soumission du formulaire. 
+import './index.css';
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+        errorElement :<ErrorPages />,
+      },
+      {
+        path: "/article",
+        element: <Article />,
+      },
+      {
+        path: "/gallery",
+        element: <Gallery />,
+      },
+      {
+        path: "/features",
+        element: <Features />,
+      },
+      {
+        path: "/testimonials",
+        element: <Testimonials />,
+      },
+      {
+        path: "/discount",
+        element: < DiscountForm/>,
+        action: eventAction
+      },
+    ],
+  },
+]);
+
+// Crée un élément racine pour le rendu de l'application.
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/*  Fournit le routeur à l'application. */}
+    <RouterProvider router={router} /> 
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

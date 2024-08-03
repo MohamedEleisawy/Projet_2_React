@@ -1,13 +1,57 @@
-body {
+:root {
+  --main-color: #2196F3;
+  --main-color-alt: #1787e0;
+  --section-padding: 100px;
+  --main-transition: .3s;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+  --section-background: #ececec;
+} 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+html {
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Cairo', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+  /* Small */
+@media (min-width: 768px) {
+  .container {
+      width: 750px;
+  }
+}
+  /* Medium */
+@media (min-width: 992px) {
+  .container {
+      width: 970px;
+  }
+}
+  /* Large */
+@media (min-width: 1200px) {
+  .container {
+      width: 1170px;
+  }
 }
