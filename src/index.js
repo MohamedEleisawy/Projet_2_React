@@ -13,6 +13,9 @@ import Testimonials from './pages/testimonials';
 import ErrorPages from './pages/errorpages';  
 import DiscountForm from './pages/DiscountForm';
 import  { action as eventAction } from "./components/Form" // importation de la fonction eventAction depuis le composant Form pour gérer l'action de soumission du formulaire. 
+import ServiceSection from './pages/service';
+import Team from './pages/team';
+import Competances from './pages/competances';
 import './index.css';
 
 const router = createBrowserRouter([
@@ -45,6 +48,18 @@ const router = createBrowserRouter([
         path: "/discount",
         element: < DiscountForm/>,
         action: eventAction
+      },
+      {
+        path: "/team",
+        element : <Team />,
+      },
+      {
+        path : "/service",
+        element : <ServiceSection />,
+      },
+      {
+        path : "/competences",
+        element : <Competances />,
       },
     ],
   },

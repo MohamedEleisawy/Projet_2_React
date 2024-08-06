@@ -55,3 +55,120 @@ a {
       width: 1170px;
   }
 }
+
+
+/* Start animation */
+@keyframes left-move {
+  50% {
+      left: 0;
+      width: 12px;
+      height: 12px;
+  }
+  100% {
+      left: 0;
+      width: 50%;
+      height: 100%;
+      border-radius: 0;
+  }
+}
+@keyframes right-move {
+  50% {
+      right: 0;
+      width: 12px;
+      height: 12px;
+  }
+  100% {
+      right: 0;
+      width: 60%;
+      height: 100%;
+      border-radius: 0;
+  }
+}
+
+@keyframes up-and-down{
+  0%, 100% {
+      top: 0;
+  }
+  50% {
+      top: -40px;
+  }
+}
+
+@keyframes flashing {
+  0% ,40% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+      width: 150%;
+      height: 150%;
+  }
+}
+
+@keyframes change-background {
+  50% {
+      background-image: url(./img/discount-background1.jpg);
+  }
+  0%, 100% {
+      background-image: url(./img/discount-background2.jpg);
+  }
+}
+/* End animation */
+
+.main-title {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto 80px;
+  padding: 10px 25px;
+  border: 2px solid black;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  transition: var(--main-transition);
+  z-index: 1;
+}
+.main-title:hover {
+  color: white;
+  border: 2px solid white;
+  transition-delay: .5s;
+}
+.main-title::before,
+.main-title::after {
+  content: "";
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  background-color: var(--main-color);
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.main-title::before {
+  left: -30px;
+}
+.main-title::after {
+  right: -30px;
+}
+.main-title:hover::before {
+  z-index: -1;
+  content: "";
+  animation: left-move .5s linear forwards;
+}
+.main-title:hover::after {
+  z-index: -1;
+  content: "";
+  animation: right-move .5s linear forwards;
+}
+.spikes {
+  position: relative;
+}
+.spikes::after {
+  height: 30px;
+  content: "";
+  position: absolute;
+  width: 100%;
+  right: 0;
+  background-image: linear-gradient(125deg, white 25%, transparent 25%), linear-gradient(235deg, white 25%, transparent 25%);
+  z-index: 1;
+  background-size: 40px 40px;
+}

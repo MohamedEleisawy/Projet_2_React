@@ -13,7 +13,7 @@ const Nav = () => {
             <ul className="main-nav">
               <li>
                 <NavLink to="/">
-                  Home
+                  Accueil
                 </NavLink>
               </li>
               <li>
@@ -22,70 +22,70 @@ const Nav = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Gallery">Gallery</NavLink>
+                <NavLink to="/Gallery">Gallerie</NavLink>
               </li>
               <li>
-                <NavLink to="/Features">Features</NavLink>
+                <NavLink to="/Features">Caractéristiques</NavLink>
               </li>
               <li>
-                <NavLink to="/Other_Links">Other Links</NavLink>
+                <NavLink to="/Other_Links">Autres Liens</NavLink>
                 <div className="megaMenu">
                   <div className="image">
-                    <img src="./imgs/megamenu.png" alt="" />
+                    <img src="./img/megamenu.png" alt="" />
                   </div>
                   <ul className="links">
                     <li>
                       <NavLink to="/testimonials">
                         <i className="far fa-comments fa-fw" />
-                        Testimonials
+                        Témoignages
                       </NavLink>
                     </li>
                     <li>
-                      <a href="#team">
+                      <NavLink to="/team">
                         <i className="far fa-user fa-fw" />
-                        Team Members
-                      </a>
+                        Membres de la team
+                      </NavLink>
                     </li>
                     <li>
-                      <a href="#services">
+                      <NavLink to="/service">
                         <i className="far fa-building fa-fw" /> Services
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a href="#our-skills">
-                        <i className="far fa-check-circle fa-fw" /> Our Skills
-                      </a>
+                      <NavLink to="/competences">
+                        <i className="far fa-check-circle fa-fw" /> Autres Compétences
+                      </NavLink>
                     </li>
                     <li>
-                      <a href="#work-steps">
-                        <i className="far fa-clipboard fa-fw" /> How It Works
-                      </a>
+                      <NavLink to="/fonctionnement"> 
+                        <i className="far fa-clipboard fa-fw" /> Comment ça marche ?
+                      </NavLink>
                     </li>
                   </ul>
                   <ul className="links">
                     <li>
-                      <a href="#events">
-                        <i className="far fa-calendar-alt fa-fw" /> Events
-                      </a>
+                      <NavLink to="/evenements">
+                        <i className="far fa-calendar-alt fa-fw" />Événements
+                      </NavLink>
                     </li>
                     <li>
-                      <a href="#pricing">
-                        <i className="fas fa-server fa-fw" /> Pricing Plans
-                      </a>
+                      <NavLink to="/tarification">
+                        <i className="fas fa-server fa-fw" /> Tarification
+                      </NavLink>
                     </li>
                     <li>
-                      <a href="#video">
-                        <i className="far fa-play-circle fa-fw" /> Top Videos
-                      </a>
+                      <NavLink to="/video">
+                        <i className="far fa-play-circle fa-fw" /> Vidéo
+                      </NavLink>
                     </li>
                     <li>
-                      <a href="#stats">
-                        <i className="far fa-chart-bar fa-fw" /> Stats
-                      </a>
+                      <NavLink to="/statistique">
+                        <i className="far fa-chart-bar fa-fw" /> Statistiques
+                      </NavLink>
                     </li>
                     <li>
                       <NavLink to="/discount">
-                        <i className="fas fa-percent fa-fw" /> Request A Discount
+                        <i className="fas fa-percent fa-fw" /> Réduction
                       </NavLink>
                     </li>
                   </ul>

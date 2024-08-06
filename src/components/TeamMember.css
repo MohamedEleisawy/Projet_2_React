@@ -1,0 +1,125 @@
+.team {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    position: relative;
+}
+
+.team .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+.team .container .box {
+    position: relative;
+    transition: var(--main-transition);
+}
+/* overlay box */
+.team .container .box::before,
+.team .container .box::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: var(--section-background);
+    border-radius: 8px;
+    transition: var(--main-transition);
+}
+
+.team .container .box::before {
+    z-index: -2;
+    width: calc(100% - 60px);
+}
+
+.team .container .box::after {
+    background-color:#e4e4e4;
+    z-index: -1;
+    width: 0;
+}
+.team .container .box:hover::after {
+    width: calc(100% - 60px);
+}
+
+@media (max-width:767px) {
+    .team .container .box::before {
+        width: 100%;
+    }
+    .team .box .info {
+        padding: 0;
+        margin: 10px auto;
+    }
+    .team .box .data{
+        padding-top: 0;
+    }
+}
+.team .container .box:hover img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.team .container .box i:hover {
+    color: #03a9f4;
+}
+
+.team .container .box:hover h3 {
+    color: #777;
+}
+
+
+/* End overlay box */
+.team .container .box .data {
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+}
+@media (max-width:767px) {
+    .team .container .box .data {
+        padding-top: 10px;
+    }
+}
+
+.team .data .social {
+    display: flex;
+    width: 60px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+    
+}
+.team .data .social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 30px;
+    color: #777;
+    
+}
+
+.team .box .data img {
+    width: calc(100% - 60px);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:767px) {
+    .team .box .data img  {
+        padding-left: 10px;
+    }
+}
+
+.team .box .info {
+    padding-left: 80px;
+}
+.team .box .info h3 {
+    margin-bottom: 0;
+    color: var(--main-color);
+    font-size: 22px;
+    transition: var(--main-transition);
+
+}
+
+.team .box .info p {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}

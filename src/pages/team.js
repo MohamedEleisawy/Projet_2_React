@@ -1,16 +1,15 @@
 import React from 'react';
-import Navbar from "../components/Nav";
-import Landing from '../components/Landing';
+import Navbar from '../components/Nav';
+import TeamMember from '../components/TeamMember';
 import Footer from '../components/Footer';
-
-const Home = () => {
+const Team = () => {
     return (
         <div>
             <Navbar />
-            <Landing />
+            <TeamMember />
             <Footer />
         </div>
     );
 }
 
-export default Home;
+export default Team;

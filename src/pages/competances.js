@@ -1,16 +1,17 @@
 import React from 'react';
 import Navbar from "../components/Nav";
-import ArticleContent from '../components/ArticleContent';
 import Footer from '../components/Footer';
-
-const Article = () => {
+import NosCompetances from "../components/Competances";
+const Competances = () => {
     return (
         <div>
             <Navbar />
-            <ArticleContent />
-            <Footer />
+            <NosCompetances />
+            <Footer /> 
+
         </div>
     );
 }
 
-export default Article;
+export default Competances;
+

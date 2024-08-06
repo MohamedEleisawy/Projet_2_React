@@ -1,0 +1,94 @@
+.services {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    position: relative;
+    background-color: var(--section-background);
+}
+
+.services .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.services .container .box {
+    background-color: white;
+    transition: var(--main-transition);
+    position: relative;
+    counter-increment: services;
+    box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+}
+
+.services .container .box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--main-color);
+    transition: var(--main-transition);
+}
+
+.services .container .box:hover::before {
+    width: 100%;
+}
+
+.services .container .box:hover {
+    transform: translateY(-10px);
+}
+
+.services .box>i {
+    display: block;
+    margin: 30px auto 20px;
+    text-align: center;
+    color: #d5d5d5;
+}
+
+.services .box>h3 {
+    text-align: center;
+    color: var(--main-color);
+    margin: 20px 0 40px;
+    font-size: 25px;
+}
+
+.services .box .info {
+    position: relative;
+    background-color: #f9f9f9;
+    text-align: right;
+    padding: 15px;
+}
+
+.services .box .info::before {
+    content: "0" counter(services);
+    position: absolute;
+    left: 0px;
+    top: 0;
+    height: 100%;
+    width: 100px;
+    background: var(--main-color-alt);
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.services .box .info::after {
+    content: "";
+    position: absolute;
+    left: 80px;
+    top: 0;
+    background: #d4d3d3;
+    width: 50px;
+    height: calc(100% + .4px);
+    transform: skewX(-30deg);
+}
+
+.services .box .info a {
+    color: var(--main-color);
+}

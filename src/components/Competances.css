@@ -1,0 +1,48 @@
+.our-skills {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    position: relative;
+}
+.our-skills .container {
+    display: flex;
+    align-items: center;
+}
+.our-skills img {
+    max-width: 100%;
+}
+@media (max-width:991px) {
+    .our-skills img {
+        display: none;
+    }
+}
+.our-skills .skills {
+    flex: 1;
+}
+.our-skills .skills .skill h3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0px 10px;
+}
+.our-skills .skills .skill h3 span {
+    font-size: 12px;
+    border: 1px solid #c5c3c3;
+    color: var(--main-color);
+    padding: 5px 5px;
+    border-radius: 7px;
+}
+
+.our-skills .skill .progress {
+    height: 30px;
+    background-color: #eee;
+    position: relative;
+}
+.our-skills .skill .progress span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--main-color);
+    transition: width 0.5s linear;
+    
+}

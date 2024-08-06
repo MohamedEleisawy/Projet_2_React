@@ -1,0 +1,106 @@
+
+.footer {
+    background-color: #191919;
+    padding: 70px 0 0;
+}
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    
+}
+
+.footer .container .box h2{
+    color: white;   
+    font-size: 50px;
+    margin: 0 0 20px;
+}
+.footer .container .box .social {
+    display: flex;
+}
+.footer .container .box ul li {
+    margin-right: 10px;
+}
+.footer .container .social li a{
+    background-color: #313131;
+    color: #b9b9b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    transition: var(--main-transition);
+}
+
+.footer .container .social li:hover .youtube {
+    background-color: rgba(255, 0, 0, 0.774);
+}
+.footer .container .social li:hover .twitter {
+    background-color: var(--main-color-alt);
+}
+.footer .container .social li:hover .facebook {
+    background-color: var(--main-color);
+}
+
+.footer .container .text {
+    line-height: 2;
+    color: #b9b9b9;
+}
+.footer .box .links li {
+    padding: 15px 0;
+    transition: var(--main-transition);
+}
+.footer .box .links li:not(:last-child) {
+    border-bottom: 1px solid #444;
+}
+.footer .container .box .links li a {
+    color: #b9b9b9;
+    transition: var(--main-transition);
+}
+.footer .container .box .links li a::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\F101";
+    font-weight: 900;
+    margin-right: 10px;
+    color: var(--main-color);
+}
+.footer .container .box .line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #b9b9b9;
+    
+}
+.footer .container .box .line i {
+    margin-right: 20px;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 25px;
+}
+.footer .container .box .line .info {
+    line-height: 1.7;
+    flex: 1;
+}
+.footer .container .box .line .info span {
+    display: block;
+}
+
+.footer .container .footer-gallery img{
+    width: 78px;
+    border: 3px solid white;
+    margin: 2px;
+}
+.footer .container .box .links li:hover{
+    padding-left: 10px;
+    color: white;
+}
+
+.footer .copy-right {
+    color: white;
+    border-top: 1px solid #777;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 50px;
+}

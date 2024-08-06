@@ -1,0 +1,48 @@
+.testimonials {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    position: relative;
+    background-color: var(--section-background);
+}
+.testimonials .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+    
+
+.testimonials .container .box {
+    background-color: white;
+    position: relative;
+    padding: 15px;
+    box-shadow: 0px 5px 12px hsl(0, 0%, 0%, 10%);
+}
+
+.testimonials .container .box img {
+    width: 100px;
+    position: absolute;
+    border-radius: 50%;
+    border: 10px solid var(--section-background);
+    right: -10px;
+    top: -50px;
+}
+
+.testimonials .container .box h3 {
+    margin: 0 0 10px;
+}
+
+.testimonials .container .box p
+{
+    color: #777;
+    line-height: 1.5;
+}
+.testimonials .box .title {
+    color: #777;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.testimonials .container .box .rate .filled{
+    color: #ffc107;
+
+}

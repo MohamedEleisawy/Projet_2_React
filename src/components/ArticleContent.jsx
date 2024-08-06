@@ -82,7 +82,7 @@ const ArticleContent = () => {
             </div>
             <div className="info">
 
-              <Link href="#">Read More</Link>
+              <Link to="#">Read More</Link>
               <i className="fas fa-long-arrow-alt-right" />
             </div>
           </div>
