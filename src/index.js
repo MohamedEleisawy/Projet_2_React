@@ -16,6 +16,9 @@ import  { action as eventAction } from "./components/Form" // importation de la 
 import ServiceSection from './pages/service';
 import Team from './pages/team';
 import Competances from './pages/competances';
+import LeFonctionnement from './pages/fonctionnement';
+
+
 import './index.css';
 
 const router = createBrowserRouter([
@@ -60,6 +63,10 @@ const router = createBrowserRouter([
       {
         path : "/competences",
         element : <Competances />,
+      },
+      {
+        path : "/fonctionnement",
+        element : <LeFonctionnement />,
       },
     ],
   },

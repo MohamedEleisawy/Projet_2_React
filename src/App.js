@@ -9,6 +9,7 @@ import Team from './pages/team';
 import ServiceSection from './pages/service';
 import DiscountForm from './pages/DiscountForm';
 import Competances from './pages/competances';
+import LeFonctionnement from './pages/fonctionnement';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/discount" element={<DiscountForm />} />
         <Route path="/service" element={<ServiceSection />} />
         <Route path="/competences" element={<Competances />} />
+        <Route path="/fonctionnement" element={<LeFonctionnement />} />
       </Routes>
     </div>
   );
