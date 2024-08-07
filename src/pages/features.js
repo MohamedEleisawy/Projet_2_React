@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from "../components/Nav";
-import FeaturesBloc from "../components/FeaturesBloc";
-import Footer from '../components/Footer';
+import Navbar from "../components/Nav/Nav";
+import FeaturesBloc from "../components/Features/FeaturesBloc";
+import Footer from '../components/Footer/Footer';
 const Features = () => {
     return (
         <div>

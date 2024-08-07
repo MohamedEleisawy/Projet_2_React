@@ -1,16 +1,15 @@
 import React from 'react';
-import Navbar from "../components/Nav/Nav";
-import Landing from '../components/Landing/Landing';
+import Navbar from '../components/Nav/Nav';
+import VideoPage from '../components/Video/Video';
 import Footer from '../components/Footer/Footer';
-
-const Home = () => {
+const Video = () => {
     return (
         <div>
             <Navbar />
-            <Landing />
+            <VideoPage />
             <Footer />
         </div>
     );
 }
 
-export default Home;
+export default Video;

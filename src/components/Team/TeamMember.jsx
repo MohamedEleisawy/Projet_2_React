@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./TeamMember.css";
-import img_team1 from "../img/team-01.jpg";
-import img_team2 from "../img/team-02.jpg";
-import img_team3 from "../img/team-03.jpg";
-import img_team4 from "../img/team-04.jpg";
-import img_team5 from "../img/team-05.png";
-import img_team6 from "../img/team-06.png";
-import img_team7 from "../img/team-07.jpg";
-import img_team8 from "../img/team-08.jpg";
+import img_team1 from "../../img/team-01.jpg";
+import img_team2 from "../../img/team-02.jpg";
+import img_team3 from "../../img/team-03.jpg";
+import img_team4 from "../../img/team-04.jpg";
+import img_team5 from "../../img/team-05.png";
+import img_team6 from "../../img/team-06.png";
+import img_team7 from "../../img/team-07.jpg";
+import img_team8 from "../../img/team-08.jpg";
 import { Link } from "react-router-dom";
 
 const TeamMember = () => {

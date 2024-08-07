@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Fonctionnement.css";
-import workImg from "../img/work-steps.png";
-import workImg2 from "../img/work-steps-2.png";
-import workImg3 from "../img/work-steps-3.png";
+import workImg from "../../img/work-steps.png";
+import workImg2 from "../../img/work-steps-2.png";
+import workImg3 from "../../img/work-steps-3.png";
 const Fonctionnement = () => {
     const fonctionnements = [
         {

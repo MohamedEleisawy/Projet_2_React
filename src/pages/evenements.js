@@ -1,16 +1,15 @@
 import React from 'react';
-import Navbar from "../components/Nav/Nav";
-import Landing from '../components/Landing/Landing';
+import Navbar from '../components/Nav/Nav'; 
+import Event from '../components/Event/Event';
 import Footer from '../components/Footer/Footer';
-
-const Home = () => {
+const Evenements = () => {
     return (
         <div>
             <Navbar />
-            <Landing />
+            <Event />
             <Footer />
         </div>
     );
 }
 
-export default Home;
+export default Evenements;

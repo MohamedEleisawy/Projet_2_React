@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from "../components/Nav";
-import CommentCaMarche from "../components/Fonctionnement";
-import Footer from '../components/Footer';
+import Navbar from "../components/Nav/Nav";
+import CommentCaMarche from "../components/Fonctionnement/Fonctionnement";
+import Footer from '../components/Footer/Footer';
 const Fonctionnement = () => {
     return (
         <div>

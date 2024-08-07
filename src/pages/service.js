@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from '../components/Nav';
-import ServiceSection from '../components/Service';
-import Footer from '../components/Footer';
+import Navbar from '../components/Nav/Nav';
+import ServiceSection from '../components/Service/Service';
+import Footer from '../components/Footer/Footer';
 const Service = () => {
     return (
         <div>

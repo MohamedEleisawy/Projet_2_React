@@ -1,15 +1,16 @@
 import React from 'react';
 import Navbar from '../components/Nav/Nav';
-import TeamMember from '../components/Team/TeamMember';
+import LaTarification from '../components/Tarification/Tarification';
 import Footer from '../components/Footer/Footer';
-const Team = () => {
+
+const Tarification = () => {
     return (
         <div>
             <Navbar />
-            <TeamMember />
-            <Footer />
+            <LaTarification />
+            <Footer /> 
         </div>
     );
 }
 
-export default Team;
+export default Tarification;

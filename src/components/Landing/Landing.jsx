@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import landingImg from "../img/landing-image.png";
+import landingImg from "../../img/landing-image.png";
 import "./Landing.css";
 const Landing = () => {
   return (

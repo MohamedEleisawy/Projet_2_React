@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./FeaturesBloc.css";
 import { Link } from "react-router-dom";
-import img1 from "../img/features-01.jpg";
-import img2 from "../img/features-02.jpg";
-import img3 from "../img/features-03.jpg";
+import img1 from "../../img/features-01.jpg";
+import img2 from "../../img/features-02.jpg";
+import img3 from "../../img/features-03.jpg";
 
 const FeaturesBloc = () => {
   const initialFeatures = [

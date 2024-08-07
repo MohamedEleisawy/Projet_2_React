@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Competances.css";
-import CompetancesImg from "../img/skills.png";
+import CompetancesImg from "../../img/skills.png";
 
 const Competances = () => {
   const LesCompetances = [

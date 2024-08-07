@@ -10,6 +10,10 @@ import ServiceSection from './pages/service';
 import DiscountForm from './pages/DiscountForm';
 import Competances from './pages/competances';
 import LeFonctionnement from './pages/fonctionnement';
+import Evenements from './pages/evenements';
+import Tarification from './pages/tarification';
+import Video from './pages/video';
+import Statistique from './pages/statistique';
 
 function App() {
   return (
@@ -25,6 +29,10 @@ function App() {
         <Route path="/service" element={<ServiceSection />} />
         <Route path="/competences" element={<Competances />} />
         <Route path="/fonctionnement" element={<LeFonctionnement />} />
+        <Route path="/evenements" element={<Evenements />} />
+        <Route path="/tarification" element={<Tarification />} />
+        <Route path="/video" element={<Video />} />
+        <Route path="/statistique" element={<Statistique />} />
       </Routes>
     </div>
   );

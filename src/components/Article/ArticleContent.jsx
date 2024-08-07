@@ -1,14 +1,14 @@
 import React , {useState} from 'react';
 import { Link } from "react-router-dom";
 import "./ArticleContent.css";
-import aricle1 from "../img/cat-01.jpg";
-import aricle2 from "../img/cat-02.jpg";
-import aricle3 from "../img/cat-03.jpg";
-import aricle4 from "../img/cat-04.jpg";
-import aricle5 from "../img/cat-05.jpg";
-import aricle6 from "../img/cat-06.jpg";
-import aricle7 from "../img/cat-07.jpg";
-import aricle8 from "../img/cat-08.jpg";
+import aricle1 from "../../img/cat-01.jpg";
+import aricle2 from "../../img/cat-02.jpg";
+import aricle3 from "../../img/cat-03.jpg";
+import aricle4 from "../../img/cat-04.jpg";
+import aricle5 from "../../img/cat-05.jpg";
+import aricle6 from "../../img/cat-06.jpg";
+import aricle7 from "../../img/cat-07.jpg";
+import aricle8 from "../../img/cat-08.jpg";
 const ArticleContent = () => {
   const article = [
     {

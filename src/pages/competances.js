@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from "../components/Nav";
-import Footer from '../components/Footer';
-import NosCompetances from "../components/Competances";
+import Navbar from "../components/Nav/Nav";
+import Footer from '../components/Footer/Footer';
+import NosCompetances from "../components/Competances/Competances";
 const Competances = () => {
     return (
         <div>

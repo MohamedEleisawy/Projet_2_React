@@ -1,6 +1,6 @@
 import React from 'react';
-import Error from '../components/Error';
-import Footer from '../components/Footer';
+import Error from '../components/Error/Error';
+import Footer from '../components/Footer/Footer';
 
 const Errorpages = () => {
     return (

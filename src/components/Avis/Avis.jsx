@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./Avis.css";
-import img_avatar1 from "../img/avatar-01.png";
-import img_avatar2 from "../img/avatar-02.png";
-import img_avatar3 from "../img/avatar-03.png";
-import img_avatar4 from "../img/avatar-04.png";
-import img_avatar5 from "../img/avatar-05.png";
-import img_avatar6 from "../img/avatar-06.png";
+import img_avatar1 from "../../img/avatar-01.png";
+import img_avatar2 from "../../img/avatar-02.png";
+import img_avatar3 from "../../img/avatar-03.png";
+import img_avatar4 from "../../img/avatar-04.png";
+import img_avatar5 from "../../img/avatar-05.png";
+import img_avatar6 from "../../img/avatar-06.png";
 const Avis = () => {
   const ListeAvis = [
     {

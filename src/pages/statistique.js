@@ -1,15 +1,15 @@
 import React from 'react';
 import Navbar from '../components/Nav/Nav';
-import TeamMember from '../components/Team/TeamMember';
+import PageStatisque from '../components/Statistique/Statistique.jsx';
 import Footer from '../components/Footer/Footer';
-const Team = () => {
+const Statistique = () => {
     return (
         <div>
             <Navbar />
-            <TeamMember />
+            <PageStatisque />
             <Footer />
         </div>
     );
 }
 
-export default Team;
+export default Statistique;

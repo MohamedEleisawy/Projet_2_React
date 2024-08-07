@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from "../components/Nav";
-import GalleryImg from '../components/GalleryImg';
-import Footer from '../components/Footer';
+import Navbar from "../components/Nav/Nav";
+import GalleryImg from '../components/Gallerie/GalleryImg';
+import Footer from '../components/Footer/Footer';
 const Gallery = () => {
     return (
         <div>

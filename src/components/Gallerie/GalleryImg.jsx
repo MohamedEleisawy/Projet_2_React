@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import gallery1 from "../img/gallery-01.png";
-import gallery2 from "../img/gallery-02.png";
-import gallery3 from "../img/gallery-03.jpg";
-import gallery4 from "../img/gallery-04.png";
-import gallery5 from "../img/gallery-05.jpg";
-import gallery6 from "../img/gallery-06.png";
-// import gallery7 from "../img/gallery-07.png";
-// import gallery8 from "../img/gallery-08.png";
+import gallery1 from "../../img/gallery-01.png";
+import gallery2 from "../../img/gallery-02.png";
+import gallery3 from "../../img/gallery-03.jpg";
+import gallery4 from "../../img/gallery-04.png";
+import gallery5 from "../../img/gallery-05.jpg";
+import gallery6 from "../../img/gallery-06.png";
+// import gallery7 from "../../img/gallery-07.png";
+// import gallery8 from "../../img/gallery-08.png";
 import "./GalleryImg.css";
 const GalleryImg = () => {
   const GallaryImages = [
